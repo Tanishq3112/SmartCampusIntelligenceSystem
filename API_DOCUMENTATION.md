@@ -23,8 +23,8 @@
 {
   "success": true,
   "data": {
-    "collegeName": "St. Bernard Institute of Technology",
-    "collegeShortName": "SBIT",
+    "collegeName": "S. B. Jain Institute of Technology, Management and Research, Nagpur",
+    "collegeShortName": "SBJITMR",
     "collegeEmailDomain": "sbjit.edu.in",
     "departments": ["Computer Science & Engineering", "..."],
     "semesters": [1, 2, 3, 4, 5, 6, 7, 8],

@@ -255,7 +255,7 @@ export const CampusChatbot: React.FC = () => {
             <div className="chatbot-header-title">Campus AI Assistant</div>
             <div className="chatbot-header-status">
               <div className="chatbot-header-status-dot" />
-              <span>Always online</span>
+              <span>SBJITMR · Always online</span>
             </div>
           </div>
           <button
@@ -341,7 +341,7 @@ export const CampusChatbot: React.FC = () => {
 
         {/* Footer */}
         <div className="chatbot-footer">
-          Powered by Campus AI · SBIT Smart Campus
+          Powered by Campus AI · SBJITMR Nagpur
         </div>
       </div>
     </>

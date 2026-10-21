@@ -138,6 +138,17 @@ export const Navbar: React.FC<NavbarProps> = ({
             <Search className="w-5 h-5" />
           </button>
 
+          {/* Campus AI Assistant Trigger Button */}
+          <button
+            onClick={() => window.dispatchEvent(new CustomEvent('open-campus-chatbot'))}
+            className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold text-indigo-700 dark:text-indigo-300 bg-indigo-50 dark:bg-indigo-950/60 border border-indigo-200 dark:border-indigo-800 rounded-xl hover:bg-indigo-100 dark:hover:bg-indigo-900/60 transition cursor-pointer shadow-2xs active:scale-95"
+            title="Ask SBJITMR Campus AI Assistant"
+            aria-label="Open Campus AI Assistant"
+          >
+            <span className="text-sm">🤖</span>
+            <span className="hidden sm:inline font-bold">Campus AI</span>
+          </button>
+
           {/* Theme Toggle Button */}
           <button
             onClick={toggleTheme}

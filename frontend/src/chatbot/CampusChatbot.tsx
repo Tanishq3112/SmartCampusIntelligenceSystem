@@ -160,6 +160,13 @@ export const CampusChatbot: React.FC = () => {
     }
   }, []);
 
+  // Listen for global open events from Navbar or any component
+  useEffect(() => {
+    const handleOpen = () => setIsOpen(true);
+    window.addEventListener('open-campus-chatbot', handleOpen);
+    return () => window.removeEventListener('open-campus-chatbot', handleOpen);
+  }, []);
+
   // Auto-scroll to bottom
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });

@@ -74,8 +74,17 @@ export const AuthPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-950 flex flex-col justify-center py-10 sm:px-6 lg:px-8 relative overflow-hidden transition-colors duration-200 bg-dot-pattern">
-      {/* Top Bar with Theme Toggle */}
-      <div className="absolute top-6 right-6 z-30">
+      {/* Top Bar with Campus AI & Theme Toggle */}
+      <div className="absolute top-6 right-6 z-30 flex items-center space-x-2">
+        <button
+          onClick={() => window.dispatchEvent(new CustomEvent('open-campus-chatbot'))}
+          className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-xs font-bold text-indigo-700 dark:text-indigo-300 hover:text-indigo-900 dark:hover:text-white shadow-xs transition cursor-pointer active:scale-95 hover:bg-slate-50 dark:hover:bg-slate-800"
+          title="Ask SBJITMR Campus AI Assistant"
+          aria-label="Open Campus AI Assistant"
+        >
+          <span className="text-sm">🤖</span>
+          <span className="hidden sm:inline">Ask Campus AI</span>
+        </button>
         <button
           onClick={toggleTheme}
           className="p-2.5 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white shadow-xs transition cursor-pointer active:scale-95 hover:bg-slate-100 dark:hover:bg-slate-800"

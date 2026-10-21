@@ -29,7 +29,7 @@ import { CreateProductModal } from './components/marketplace/CreateProductModal'
 import { GlobalSearchModal } from './components/common/GlobalSearchModal';
 import { ErrorBoundary } from './components/common/ErrorBoundary';
 import { api } from './services/api';
-
+import { CampusChatbot } from './chatbot/CampusChatbot';
 
 import { useChat } from './context/ChatContext';
 
@@ -238,6 +238,7 @@ export default function App() {
           <NotificationProvider>
             <ChatProvider>
               <AppContent />
+              <CampusChatbot />
             </ChatProvider>
           </NotificationProvider>
         </AuthProvider>
